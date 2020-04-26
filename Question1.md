@@ -13,31 +13,31 @@ Given a sentence, convert each word in sentence into capital case. A word is in 
 
 ## Approach
 Let us try to understand the approach and soution in a step wise manner.
-- The problem statement says that we have to make modifications on each word in the sentence. So, think about a way to break the sentence into words. In Javascript, we can split any string into substrings using [`String.prototype.split()`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/split) method. It accepts a `separator` as an argument. In our case we can do this as
+- The problem statement says that we have to make modifications on each word in the sentence. So, think about a way to break the sentence into words. In Javascript, we can split any string into substrings using [`String.prototype.split()`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/split) method. It accepts a `separator` as an argument. In our case we can use this function by passing `seperator` as `space`. 
 ```js
 const sentence = "india is a beautiFul country";
 const words = sentence.split(' ');
 console.log(words); // ["india", "is", "a", "beautiFul", "country"]
 ```
-- Once we have individual `words` to work on, we can now think how to make first letter of word as capital case and rest as small case. So again we will have to split the individual word into two parts. 
+- Once we have individual `words` to work on, we can now think how to make first letter of word as capital case and rest as small case. To do that, we will have to split the individual word into below two parts. 
   - First Character
   - Remaining Characters
   
-  For this we can use `destructuring` in Javascript as below
+  For this we can use [`destructuring`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Destructuring_assignment) in Javascript as below
 ```js
 const word = "india";
 const [firstChar, ...restChars] = word;
 console.log(firstChar); // i
 console.log(restChars); // ['n', 'd', 'i', 'a']
 ```
-- Now that we have first character, we can capitalise it using `Array.prototype.toUpperCase()` method as shown below
+- Now that we have first character, we can capitalise it using [`Array.prototype.toUpperCase()`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/toUpperCase) method as shown below
 ```js
 const char = 'a';
 console.log(char.toUpperCase()) // A
 ```
 - Now the we have rest of the word in a array of string format. For example, `['n', 'd', 'i', 'a']`.  So we have to perform two steps now.
-  - Join the character array to form a string. This can be done using `Array.prototype.join()`
-  -    Convert the string into lower case. This can be done using `String.prototype.toLowerCase()` method
+  - Join the character array to form a string. This can be done using [`Array.prototype.join()`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/join)
+  -    Convert the string into lower case. This can be done using [`String.prototype.toLowerCase()`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/toLowerCase) method
  
   Below are code snippets for the same.
 ```js
