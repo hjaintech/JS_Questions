@@ -13,7 +13,7 @@ Given a sentence, convert each word in sentence into capital case. A word is in 
 
 ## Approach
 Let us try to understand the approach and soution in a step wise manner.
-- The problem statement says that we have to make modifications on each word in the sentence. So, think about a way to break the sentence into words. In Javascript, we can split any string into substrings using [String.prototype.split()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/split) method. It accepts a `separator` as an argument. In our case we can do this as
+- The problem statement says that we have to make modifications on each word in the sentence. So, think about a way to break the sentence into words. In Javascript, we can split any string into substrings using [`String.prototype.split()`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/split) method. It accepts a `separator` as an argument. In our case we can do this as
 ```js
 const sentence = "india is a beautiFul country";
 const words = sentence.split(' ');
