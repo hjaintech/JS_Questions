@@ -1,18 +1,18 @@
 
 # Given a sentence, convert each word in the sentence to capital case
 
-Given a sentence, convert each word in sentence into capital case. 
+Given a sentence, convert each word in sentence into capital case. A word is in capital case when first character of word is in upper case and rest of letters are in lower case. 
 
 ## Example
 > ### Input
-> S = "india is a beautiFul country"
+> india is a beautiFul country
 > ### Output
 > India Is A Beautiful Country
 > ### Explanation
-> The above sentence had 5 words. In the output, each word has it's first character as capital case and all other characters as small case.
+> The input sentence has 5 words. In the output, each word has it's first character in upper case and all other characters in lower case.
 
 ## Approach
-Let us try to break down the problem statement into below steps
+Let us try to understand the approach and soution in a step wise manner.
 - The problem statement says that we have to make modifications on each word in the sentence. So, think about a way to break the sentence into words. In Javascript, we can split any string into substrings using `String.prototype.split()` method. It accepts a `separator` as an argument. In our case we can do this as
 ```js
 const sentence = "india is a beautiFul country";
