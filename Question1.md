@@ -35,7 +35,7 @@ console.log(restChars); // ['n', 'd', 'i', 'a']
 const char = 'a';
 console.log(char.toUpperCase()) // A
 ```
-- Now the we have rest of the word in a array of string format. For example, `['n', 'd', 'i', 'a']`.  So we have to perform two steps now.
+- Now we have rest of the word in an array of strings. For example, `['n', 'd', 'i', 'a']`.  So we will have to perform two steps.
   - Join the character array to form a string. This can be done using [`Array.prototype.join()`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/join)
   -    Convert the string into lower case. This can be done using [`String.prototype.toLowerCase()`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/toLowerCase) method
  
