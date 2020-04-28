@@ -1,5 +1,5 @@
-## What is the output of ` console.log(0.1 + 0.2 == 0.3)` in JS
-### Solution: 
+## `console.log(0.1 + 0.2 == 0.3)`
+### Output: 
 `false`
 ### Explanation
 This happens because the computer works on `Base 2` while decimal is `Base 10` which causes precision errors when doing decimal calculations.
