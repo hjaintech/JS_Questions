@@ -1,4 +1,5 @@
-## `console.log(0.1 + 0.2 == 0.3)`
+### Question
+`(0.1 + 0.2 == 0.3)`
 ### Output: 
 `false`
 ### Explanation
