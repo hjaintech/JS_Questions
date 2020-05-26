@@ -10,4 +10,4 @@
 
 ### Reference blogs
 - [Samantha Ming Blog](https://www.samanthaming.com/)
-- [List of blogs] (https://tamuk.quickstart.com/blog/10-front-end-web-developer-portfolios-to-inspire-you/)
+- [List of blogs](https://tamuk.quickstart.com/blog/10-front-end-web-developer-portfolios-to-inspire-you/)
