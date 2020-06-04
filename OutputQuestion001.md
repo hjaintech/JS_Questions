@@ -1,3 +1,5 @@
+## What would be the output of below code snippet?
+
 ```js
 var name = "Bob";
 name[0] = 'T';
@@ -9,4 +11,6 @@ console.log(`${name} Smith`);
 ```
 
 
-Output: `Bob Smith`
+## Output: `Bob Smith`
+
+## Explanation:
