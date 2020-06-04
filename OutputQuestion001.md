@@ -11,6 +11,9 @@ console.log(`${name} Smith`);
 ```
 
 
-## Output: `Bob Smith`
+## Output: 
+`Bob Smith`
 
 ## Explanation:
+
+This happens because Strings are `immutable` in JavaScript. So you can't mutate the string value. the original value remains unchanged. So effectively `name[0] = 'T'` doesn't make any change, although it doesn't throw an error as well. 
